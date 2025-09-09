@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Networking Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="notes.js"></script>
+</head>
+<body onload="loadNotes('networking')">
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="networking.html">Networking</a>
+    <a href="linux.html">Linux</a>
+    <a href="python.html">Python</a>
+    <a href="cybersecurity.html">Cybersecurity</a>
+</div>
+<div class="stars"></div>
+<div class="container">
+    <h2>Networking Basics</h2>
+    <p>Understand OSI/TCP models, IP addressing, ports and protocols.</p>
+    <iframe src="https://www.youtube.com/embed/3BQMQECm8hQ" allowfullscreen></iframe>
+    <div class="progress">
+        <h3>Progress Tracker</h3>
+        <label><input type="checkbox" id="networking_0" onchange="toggleCheckbox('networking', this.id)"><span>Watched the Networking video</span></label>
+        <label><input type="checkbox" id="networking_1" onchange="toggleCheckbox('networking', this.id)"><span>Learned OSI layers</span></label>
+        <label><input type="checkbox" id="networking_2" onchange="toggleCheckbox('networking', this.id)"><span>Practiced with IP addressing</span></label>
+        <label><input type="checkbox" id="networking_3" onchange="toggleCheckbox('networking', this.id)"><span>Tried Wireshark basics</span></label>
+    </div>
+    <div class="notes">
+        <h3>Your Notes</h3>
+        <textarea id="notes"></textarea><br>
+        <button class="save-btn" onclick="saveNotes('networking')">Save Notes</button>
+    </div>
+</div>
+</body>
+</html>
